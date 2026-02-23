@@ -110,7 +110,9 @@ table {
 }
 
 /* Hide date placeholder if empty */
-
+input {
+  color: #000;
+}
 
 
 /* ================== PRINT SETTINGS (FINAL CLEAN) ================== */
