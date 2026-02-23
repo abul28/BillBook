@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import "../styles/invoice.css";
+import "../styles/Invoice.css";
 
 const InvoiceTemplate = forwardRef(({ data, setInvoiceData }, ref) => {
 
