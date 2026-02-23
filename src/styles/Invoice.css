@@ -90,11 +90,14 @@ table {
   outline: none;
   width: 100%;
   margin-bottom: 5px;
-  background: transparent;
+  background-color: transparent;
   font-family: "Times New Roman", serif;
   font-size: 14px;
-  min-height: 18px;
-  padding: 2px 0;
+
+  /* 🔥 IMPORTANT MOBILE FIX */
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+  opacity: 1 !important;
 }
 
 .dotted-input.short {
