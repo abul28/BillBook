@@ -1,0 +1,152 @@
+/* ================== NORMAL SCREEN ================== */
+
+body {
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.invoice-wrapper {
+  width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+table {
+  page-break-inside: avoid;
+}
+
+.main-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+
+.main-table td,
+.main-table th {
+  border: 1px solid #000;
+  padding: 6px;
+  font-size: 14px;
+  vertical-align: top;
+  font-family: "Times New Roman", serif;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+}
+
+.company-name {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.right-align {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.product-table,
+.total-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td,
+.total-table td {
+  border: 1px solid #000;
+  padding: 5px;
+  text-align: center;
+}
+
+.signature {
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+/* ================== INPUT STYLING ================== */
+
+.dotted-input {
+  border: none;
+  border-bottom: 1px dotted #000;
+  outline: none;
+  width: 100%;
+  margin-bottom: 5px;
+  background: transparent;
+  font-family: "Times New Roman", serif;
+  font-size: 14px;
+  min-height: 18px;
+  padding: 2px 0;
+}
+
+.dotted-input.short {
+  width: 45%;
+  margin-right: 5%;
+}
+
+.add-btn,
+.delete-btn {
+  margin-top: 8px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+/* Hide date placeholder if empty */
+input[type="date"]:invalid {
+  color: transparent;
+}
+
+
+/* ================== PRINT SETTINGS (FINAL CLEAN) ================== */
+
+@page {
+  size: A4;
+  margin: 8mm;
+}
+
+@media print {
+
+  body {
+    margin: 0;
+    background: white;
+  }
+
+  /* Hide buttons */
+  .add-btn,
+  .delete-btn,
+  button {
+    display: none !important;
+  }
+
+  /* Hide ONLY product action column */
+  .product-table th:last-child,
+  .product-table td:last-child {
+    display: none !important;
+  }
+
+  .invoice-wrapper {
+    width: 194mm;
+    min-height: 270mm;
+    margin: 0 auto;
+    box-shadow: none;
+  }
+
+  input {
+    border: none !important;
+  }
+
+}
