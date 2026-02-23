@@ -110,9 +110,7 @@ table {
 }
 
 /* Hide date placeholder if empty */
-input[type="date"]:invalid {
-  color: transparent;
-}
+
 
 
 /* ================== PRINT SETTINGS (FINAL CLEAN) ================== */
