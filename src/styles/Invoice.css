@@ -114,7 +114,8 @@ table {
 
 /* Hide date placeholder if empty */
 input {
-  color: #000;
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
 }
 
 
@@ -156,4 +157,21 @@ input {
     border: none !important;
   }
 
+}
+/* ================= MOBILE INPUT FIX ================= */
+
+input,
+textarea {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
+}
+
+/* Remove mobile default appearance issues */
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
 }
