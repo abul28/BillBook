@@ -3,13 +3,17 @@
 body {
   background: #f4f4f4;
   margin: 0;
+  display: flex;
+  justify-content: center;  /* Force horizontal center */
 }
 
 .invoice-wrapper {
-  width: 800px;
-  margin: 40px auto;
+  width: 95%;
+  max-width: 800px;
+  margin: 40px auto;   /* This centers it */
   background: #fff;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: block;
 }
 
 table {
@@ -121,6 +125,7 @@ input[type="date"]:invalid {
 @media print {
 
   body {
+    display: block;
     margin: 0;
     background: white;
   }
@@ -139,8 +144,7 @@ input[type="date"]:invalid {
   }
 
   .invoice-wrapper {
-    width: 194mm;
-    min-height: 270mm;
+    width: 190mm;
     margin: 0 auto;
     box-shadow: none;
   }
