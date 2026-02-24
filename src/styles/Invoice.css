@@ -3,17 +3,16 @@
 body {
   background: #f4f4f4;
   margin: 0;
-  display: flex;
-  justify-content: center;  /* Force horizontal center */
+  justify-content: center;
 }
 
 .invoice-wrapper {
-  width: 95%;
+  width: 100%;
   max-width: 800px;
-  margin: 40px auto;   /* This centers it */
+  margin: 40px auto;
+  padding: 0 10px;   /* Add side breathing space */
   background: #fff;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  display: block;
 }
 
 table {
