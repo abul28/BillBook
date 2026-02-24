@@ -157,11 +157,17 @@ input {
   }
 
   /* Hide buttons */
-  .add-btn,
-  .delete-btn,
-  button {
-    display: none !important;
-  }
+  .add-btn {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+.delete-btn {
+  background-color: #ffffff !important;
+  color: #ff0000 !important;
+  border: 1px solid #ff0000 !important;
+}
 
   /* Hide ONLY product action column */
   .product-table th:last-child,
@@ -194,4 +200,32 @@ input[type="number"],
 input[type="date"] {
   appearance: none;
   -webkit-appearance: none;
+}
+
+.print-wrapper {
+  text-align: center;
+  margin: 20px;
+}
+
+.print-btn {
+  background: linear-gradient(135deg, #000000, #444444) !important;
+  color: #ffffff !important;
+  border: none;
+  padding: 12px 26px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Hover effect */
+.print-btn:hover {
+  background-color: #333333 !important;
+}
+
+/* Remove in print */
+@media print {
+  .print-wrapper {
+    display: none !important;
+  }
 }
