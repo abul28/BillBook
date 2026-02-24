@@ -81,14 +81,25 @@ const InvoiceTemplate = forwardRef(({ data, setInvoiceData }, ref) => {
           {/* HEADER */}
           <tr>
             <td colSpan="2" className="header">
-              <div className="company-name">DEEPSHIKA METAL</div>
-              <div>(Manufactures & Wholesale Dealers in Aluminum Circle & Home Utensils)</div>
-              <div>Plot No : 36A, Sidco Industrial Estate ELAMBALUR - Perambalur (Dt) - 621 212.</div>
-              <div className="right-align">
-                Cell : 76392 50904 <br />
-                97892 91368
-              </div>
-            </td>
+  <div className="header-container">
+
+    <div className="header-left"></div>
+
+    <div className="header-center">
+      <div className="company-name">DEEPSHIKA METAL</div>
+      <div>(Manufactures & Wholesale Dealers in Aluminum Circle & Home Utensils)</div>
+      <div>
+        Plot No : 36A, Sidco Industrial Estate ELAMBALUR - Perambalur (Dt) - 621 212.
+      </div>
+    </div>
+
+    <div className="header-right">
+      Cell : 76392 50904 <br />
+      97892 91368
+    </div>
+
+  </div>
+</td>
           </tr>
 
           {/* GST */}
