@@ -9,12 +9,13 @@ body {
 }
 
 .invoice-wrapper {
-  width: 95%;
+  width: calc(100% - 20px);
   max-width: 800px;
-  margin: 40px auto;   /* This centers it */
+  margin: 40px auto;
   background: #fff;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  display: block;
+
+  /* FIX MOBILE TEXT DISAPPEAR BUG */
+  transform: translateZ(0);
 }
 
 table {
