@@ -100,11 +100,11 @@ function App() {
         total={total}
       />
 
-      <div style={{ textAlign: "center", margin: "20px" }}>
-        <button onClick={() => window.print()}>
-  Print Invoice
-</button>
-      </div>
+      <div className="print-wrapper">
+  <button className="print-btn" onClick={() => window.print()}>
+    Print Invoice
+  </button>
+</div>
     </div>
   );
 }
