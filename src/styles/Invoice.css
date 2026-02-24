@@ -57,6 +57,7 @@ table {
 
 .header {
   text-align: center;
+  position: relative;
 }
 
 .company-name {
@@ -66,9 +67,10 @@ table {
 }
 
 .right-align {
+  position: absolute;
+  top: 5px;
+  right: 10px;
   text-align: right;
-  font-size: 14px;
-  margin-top: 5px;
 }
 
 .center {
@@ -100,52 +102,6 @@ table {
   padding-bottom: 10px;
 }
 
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.company-block {
-  flex: 1;
-  text-align: center;
-}
-
-.contact-block {
-  text-align: right;
-  font-size: 14px;
-}
-
-.header {
-  padding: 10px;
-}
-
-.header-container {
-  display: flex;
-  align-items: flex-start;
-}
-
-.header-left,
-.header-right {
-  width: 180px; /* fixed space */
-}
-
-.header-center {
-  flex: 1;
-  text-align: center;
-}
-
-.header-right {
-  text-align: right;
-  font-size: 14px;
-}
-
-.company-name {
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
 /* ================== INPUT STYLING ================== */
 
 .dotted-input {
