@@ -15,7 +15,7 @@ body {
   background: #fff;
 
   /* FIX MOBILE TEXT DISAPPEAR BUG */
-  transform: translateZ(0);
+  
 }
 
 table {
@@ -98,8 +98,6 @@ table {
 
   /* 🔥 IMPORTANT MOBILE FIX */
   color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
-  opacity: 1 !important;
 }
 
 .dotted-input.short {
@@ -164,10 +162,8 @@ input {
 
 input,
 textarea {
-  color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
-  opacity: 1 !important;
-  background-color: transparent !important;
+  color: #000;
+  background: transparent;
 }
 
 /* Remove mobile default appearance issues */
