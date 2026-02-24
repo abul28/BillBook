@@ -5,6 +5,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;  /* Force horizontal center */
+  -webkit-font-smoothing: antialiased;
 }
 
 .invoice-wrapper {
