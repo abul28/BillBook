@@ -1,20 +1,24 @@
 /* ===== Force Proper Light & Dark Mode Support ===== */
 
+/* Force light mode always */
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
-body {
-  background-color: #ffffff;
-  color: #000000;
+html, body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
 }
 
 /* Force table text visible */
 .main-table,
 .main-table td,
 .main-table th,
-input {
-  color: #000000;
+input,
+textarea {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
 }
 /* ================== NORMAL SCREEN ================== */
 
@@ -190,26 +194,4 @@ input[type="number"],
 input[type="date"] {
   appearance: none;
   -webkit-appearance: none;
-}
-@media (prefers-color-scheme: dark) {
-
-  body {
-    background-color: #111;
-  }
-
-  .invoice-wrapper {
-    background-color: #1e1e1e;
-  }
-
-  .main-table,
-  .main-table td,
-  .main-table th,
-  input {
-    color: #ffffff;
-    border-color: #ffffff;
-  }
-
-  .dotted-input {
-    border-bottom: 1px dotted #ffffff;
-  }
 }
