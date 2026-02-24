@@ -32,7 +32,7 @@ table {
   padding: 6px;
   font-size: 14px;
   vertical-align: top;
-  font-family: "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -91,7 +91,7 @@ table {
   width: 100%;
   margin-bottom: 5px;
   background-color: transparent;
-  font-family: "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 
   /* 🔥 IMPORTANT MOBILE FIX */
